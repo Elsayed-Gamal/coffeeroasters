@@ -2,5 +2,67 @@
   .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 43.5px 0;
+
+    .nav-items {
+      list-style: none;
+      display: flex;
+      text-transform: uppercase;
+      gap: 32px;
+
+      a {
+        text-decoration: none;
+        color: #83888f;
+      }
+    }
+  }
+
+  .hero {
+    // max-width: 100%;
+    height: 600px;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 85px;
+      transform: translateY(-50%);
+      max-width: 445px;
+      color: #fefcf7;
+
+      h1 {
+        color: inherit;
+        margin-bottom: 32px;
+      }
+
+      p {
+        margin-bottom: 56px;
+        opacity: 0.8;
+        max-width: 44ch;
+      }
+    }
+  }
+}
+
+.collection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 136px;
+
+  h2 {
+    font-size: 150px;
+    line-height: 150px;
+    background: linear-gradient(rgba(131, 136, 143, 0.5), #fefcf7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
